@@ -1,6 +1,6 @@
-# FOOD DELIVERY MOBILE APP
+# MALLIKA COOKBOOK MOBILE APP
 
-Design base on [Food Delivery App](https://www.behance.net/gallery/98398225/Food-Ping-Food-Delivery-App-UIUX-Design-Case-Study).
+Design base on [Mallika CookbookApp](https://www.behance.net/gallery/115230117/Mallika-Cookbook-Free-UI-Kit).
 
 ## Developers
 - Bustamante Gutierrez Luiggi Marcell

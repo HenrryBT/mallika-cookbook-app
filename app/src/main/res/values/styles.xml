@@ -3,6 +3,13 @@
 
     <!-- Su código aquí amiguitos -->
 
+    <style name="recoleta_tittle">
+        <item name="android:fontFamily">@font/recoleta_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textFontWeight">600</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
     <style name="button_back">
         <item name="android:layout_margin">10dp</item>
         <item name="android:background">@color/white</item>
@@ -13,8 +20,19 @@
         <item name="android:paddingVertical">20dp</item>
     </style>
 
+
     <style name="radio_button">
         <item name="android:drawableTop">@drawable/fondo_radio_button</item>
         <item name="android:button">@null</item>
+
+    <style name="button_profile">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingVertical">20dp</item>
+        <item name="colorAccent">@android:color/white</item>
+
     </style>
 </resources>

@@ -34,7 +34,8 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.521" >
+            app:layout_constraintVertical_bias="0.521">
+
 
         </androidx.viewpager2.widget.ViewPager2>
 
@@ -45,7 +46,11 @@
             android:fontFamily="@font/recoleta_regular"
             android:text="Mallika"
             android:textColor="@color/black"
-            android:textSize="32sp" />
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="100dp" />
 
         <TextView
             android:id="@+id/textView2"
@@ -55,7 +60,9 @@
             android:text="Everyone can be a chef"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <EditText
             android:id="@+id/editTextTextPersonName"

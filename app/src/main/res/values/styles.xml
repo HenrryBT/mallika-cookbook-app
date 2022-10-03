@@ -9,7 +9,19 @@
     <!-- Text -->
 
     <style name="main_title_recoleta">
+        <item name="android:fontFamily">@font/recoleta_semibold</item>
+        <item name="android:fontWeight">600</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="flow_verticalAlign">top</item>
+        <item name="android:letterSpacing">@dimen/letter_spacing</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="home_title_recoleta">
         <item name="android:fontFamily">@font/recoleta_regular</item>
+        <item name="android:fontWeight">500</item>
         <item name="android:textSize">24sp</item>
         <item name="android:lineHeight">24sp</item>
         <item name="android:textAlignment">viewStart</item>

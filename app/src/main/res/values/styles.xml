@@ -32,7 +32,7 @@
 
     <style name="user_title_cera">
         <item name="android:fontFamily">@font/fontspring_cerapro_medium</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:textAlignment">viewStart</item>
         <item name="flow_verticalAlign">top</item>
         <item name="android:letterSpacing">@dimen/letter_spacing</item>

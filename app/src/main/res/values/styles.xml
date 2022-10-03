@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Su código aquí amiguitos -->
+
+    <style name="button_back">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/color7</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingVertical">20dp</item>
+    </style>
+</resources>

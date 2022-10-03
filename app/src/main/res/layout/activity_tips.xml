@@ -29,17 +29,20 @@
 
         <RadioButton
             android:id="@+id/rbTip1"
+            style="@style/radio_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:ignore="DuplicateSpeakableTextCheck" />
 
         <RadioButton
             android:id="@+id/rbTip2"
+            style="@style/radio_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <RadioButton
             android:id="@+id/rbTip3"
+            style="@style/radio_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </RadioGroup>

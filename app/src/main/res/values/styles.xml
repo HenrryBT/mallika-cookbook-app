@@ -12,4 +12,9 @@
         <item name="android:layout_weight">1</item>
         <item name="android:paddingVertical">20dp</item>
     </style>
+
+    <style name="radio_button">
+        <item name="android:drawableTop">@drawable/fondo_radio_button</item>
+        <item name="android:button">@null</item>
+    </style>
 </resources>

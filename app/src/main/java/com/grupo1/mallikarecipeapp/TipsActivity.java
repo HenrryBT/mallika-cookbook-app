@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 
 import com.grupo1.mallikarecipeapp.fragments.Tip1Fragment;
 import com.grupo1.mallikarecipeapp.fragments.Tip2Fragment;

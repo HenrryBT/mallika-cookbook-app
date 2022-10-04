@@ -68,16 +68,20 @@
         app:layout_constraintTop_toBottomOf="@+id/divider3"
         tools:ignore="TextContrastCheck" />
 
-    <TextView
-        android:id="@+id/textView14"
+    <EditText
+        android:id="@+id/tpName"
         style="@style/base_cera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/name"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:hint="@string/name30"
+        android:inputType="textPersonName"
+        android:outlineProvider="none"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        tools:ignore="TouchTargetSizeCheck"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textView15"
@@ -91,16 +95,19 @@
         app:layout_constraintTop_toBottomOf="@+id/divider4"
         tools:ignore="TextContrastCheck" />
 
-    <TextView
-        android:id="@+id/textView16"
+    <EditText
+        android:id="@+id/tpEmail"
         style="@style/base_cera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/mail"
+        android:layout_marginStart="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/email30"
+        android:inputType="textEmailAddress"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
 
     <TextView
         android:id="@+id/textView17"
@@ -114,16 +121,19 @@
         app:layout_constraintTop_toBottomOf="@+id/divider5"
         tools:ignore="TextContrastCheck" />
 
-    <TextView
-        android:id="@+id/textView18"
+    <EditText
+        android:id="@+id/tpNumber"
         style="@style/base_cera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/number"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:hint="@string/number30"
+        android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textView19"
@@ -137,16 +147,19 @@
         app:layout_constraintTop_toBottomOf="@+id/divider6"
         tools:ignore="TextContrastCheck" />
 
-    <TextView
-        android:id="@+id/textView20"
+    <EditText
+        android:id="@+id/tpBio"
         style="@style/base_cera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/biography"
+        android:layout_marginStart="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/biography30"
+        android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,TextContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -194,37 +207,33 @@
         android:id="@+id/divider4"
         android:layout_width="409dp"
         android:layout_height="1dp"
-        android:layout_marginTop="16dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintTop_toBottomOf="@+id/tpName" />
 
     <View
         android:id="@+id/divider5"
         android:layout_width="409dp"
         android:layout_height="1dp"
-        android:layout_marginTop="16dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintTop_toBottomOf="@+id/tpEmail" />
 
     <View
         android:id="@+id/divider6"
         android:layout_width="409dp"
         android:layout_height="1dp"
-        android:layout_marginTop="16dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        app:layout_constraintTop_toBottomOf="@+id/tpNumber" />
 
     <View
         android:id="@+id/divider7"
         android:layout_width="409dp"
         android:layout_height="1dp"
-        android:layout_marginTop="16dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+        app:layout_constraintTop_toBottomOf="@+id/tpBio" />
 
     <Button
         android:id="@+id/btn_send_otp"

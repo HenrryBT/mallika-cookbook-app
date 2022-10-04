@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey_100"
     tools:context=".HomeActivity">
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/home_scroll_view"
         android:layout_width="0dp"
-        android:layout_height="675dp"
+        android:layout_height="wrap_content"
         android:background="@color/grey_100"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,6 +26,7 @@
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/user_nav_home"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="60dp">
@@ -60,7 +62,8 @@
                     android:layout_marginTop="4dp"
                     android:text="@string/what_are_you_cooking_today"
                     app:layout_constraintStart_toEndOf="@+id/btn_profile_home"
-                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView10"
+                    tools:ignore="TextContrastCheck" />
 
                 <ImageView
                     android:id="@+id/imageView21"
@@ -77,6 +80,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/home_cookbook_title"
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
 
@@ -94,7 +98,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/cookbook"
+                android:id="@+id/cookbooks"
                 android:layout_width="match_parent"
                 android:layout_height="473dp">
 
@@ -115,8 +119,9 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rb_container_home"
                 android:layout_width="match_parent"
-                android:layout_height="20dp">
+                android:layout_height="75dp">
 
                 <RadioGroup
                     android:layout_width="wrap_content"
@@ -152,16 +157,18 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/title_community_home"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView8"
+                    android:id="@+id/tv_featured_community"
                     style="@style/home_title_recoleta"
                     android:layout_width="match_parent"
                     android:layout_height="77dp"
-                    android:layout_marginStart="16dp"
-                    android:text="Featured Community Recipes"
+                    android:layout_marginStart="@dimen/space"
+                    android:layout_marginEnd="@dimen/space"
+                    android:text="@string/community_title_home"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -172,36 +179,47 @@
                 <TextView
                     android:id="@+id/textView35"
                     style="@style/main_caption_cera"
-                    android:layout_width="344dp"
+                    android:layout_width="0dp"
                     android:layout_height="40dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:text="Get lots of recipe inspiration from the community"
+                    android:layout_marginStart="@dimen/space"
+                    android:layout_marginEnd="@dimen/space"
+                    android:text="@string/community_caption_home"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.5" />
+                    tools:ignore="TextContrastCheck" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/community_1_home"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
-                <ImageView
-                    android:id="@+id/imageView17"
-                    android:layout_width="wrap_content"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="@dimen/space"
+                    android:layout_marginTop="@dimen/space"
+                    android:layout_marginEnd="@dimen/space"
+                    app:cardBackgroundColor="#00000000"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:cardMaxElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/cookbook_1" />
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="fill_parent"
+                        android:layout_height="280dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/cookbook_1"
+                        tools:ignore="ContentDescription,ImageContrastCheck" />
+                </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:id="@+id/textView50"
@@ -209,10 +227,11 @@
                     android:layout_width="344dp"
                     android:layout_height="66dp"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="18dp"
-                    android:text="Resep Ayam Kuah Santan Pedas Lezat"
+                    android:layout_marginTop="@dimen/space"
+                    android:lineHeight="36sp"
+                    android:text="@string/resep_ayam_kuah_santan_pedas_lezat"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+                    app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
                 <ImageView
                     android:id="@+id/imageView41"
@@ -220,9 +239,12 @@
                     android:layout_height="40dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="@dimen/space"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView50"
-                    app:srcCompat="@drawable/avatar" />
+                    app:srcCompat="@drawable/avatar"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:id="@+id/textView51"
@@ -231,7 +253,7 @@
                     android:layout_height="20dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
-                    android:text="Nadia Putri"
+                    android:text="@string/nadia_putri"
                     app:layout_constraintStart_toEndOf="@+id/imageView41"
                     app:layout_constraintTop_toBottomOf="@+id/textView50" />
 
@@ -243,7 +265,8 @@
                     app:layout_constraintStart_toEndOf="@+id/imageView41"
                     app:layout_constraintTop_toBottomOf="@+id/textView51"
                     app:srcCompat="@drawable/heart_filled"
-                    app:tint="@color/orange" />
+                    app:tint="@color/orange"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
 
                 <TextView
                     android:id="@+id/textView52"
@@ -252,10 +275,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="2dp"
-                    android:text="130"
+                    android:text="@string/num_130_home"
                     android:textColor="@color/grey_800"
                     app:layout_constraintStart_toEndOf="@+id/imageView42"
-                    app:layout_constraintTop_toBottomOf="@+id/textView51" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView51"
+                    tools:ignore="TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/textView53"
@@ -265,11 +289,12 @@
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="2dp"
                     android:layout_marginEnd="12dp"
-                    android:text="."
+                    android:text="@string/dot_home"
                     android:textColor="@color/grey_800"
                     app:layout_constraintEnd_toStartOf="@+id/textView54"
                     app:layout_constraintStart_toEndOf="@+id/textView52"
-                    app:layout_constraintTop_toBottomOf="@+id/textView51" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView51"
+                    tools:ignore="TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/textView54"
@@ -278,10 +303,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="2dp"
-                    android:text="103 reviews"
+                    android:text="@string/num_103_reviews_home"
                     android:textColor="@color/grey_800"
                     app:layout_constraintStart_toEndOf="@+id/textView53"
-                    app:layout_constraintTop_toBottomOf="@+id/textView51" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView51"
+                    tools:ignore="TextContrastCheck" />
 
                 <ImageView
                     android:id="@+id/imageView43"
@@ -292,27 +318,43 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView50"
                     app:srcCompat="@drawable/heart"
-                    app:tint="@color/orange" />
+                    app:tint="@color/orange"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <Space
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="16dp" />
 
-                <ImageView
-                    android:id="@+id/imageView40"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/community_2_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:scaleType="centerCrop"
+                    android:layout_marginStart="@dimen/space"
+                    android:layout_marginTop="@dimen/space"
+                    android:layout_marginEnd="@dimen/space"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:cardMaxElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/cookbook_2" />
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView40"
+                        android:layout_width="fill_parent"
+                        android:layout_height="280dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/cookbook_2"
+                        tools:ignore="ContentDescription" />
+                </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:id="@+id/textView500"
@@ -321,9 +363,10 @@
                     android:layout_height="33dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
-                    android:text="Resep Kare Ayam Kuah Pedas"
+                    android:lineHeight="36sp"
+                    android:text="@string/resep_kare_ayam_kuah_pedas"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView40" />
+                    app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
                 <ImageView
                     android:id="@+id/imageView410"
@@ -331,9 +374,12 @@
                     android:layout_height="40dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="@dimen/space"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView500"
-                    app:srcCompat="@drawable/avatar" />
+                    app:srcCompat="@drawable/avatar"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:id="@+id/textView510"
@@ -342,7 +388,7 @@
                     android:layout_height="20dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
-                    android:text="Gayuh Tri Pinjungwati"
+                    android:text="@string/gayuh_tri_pinjungwati"
                     app:layout_constraintStart_toEndOf="@+id/imageView410"
                     app:layout_constraintTop_toBottomOf="@+id/textView500" />
 
@@ -354,7 +400,8 @@
                     app:layout_constraintStart_toEndOf="@+id/imageView410"
                     app:layout_constraintTop_toBottomOf="@+id/textView510"
                     app:srcCompat="@drawable/heart_filled"
-                    app:tint="@color/orange" />
+                    app:tint="@color/orange"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
 
                 <TextView
                     android:id="@+id/textView520"
@@ -363,10 +410,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="2dp"
-                    android:text="130"
+                    android:text="@string/num_130_home"
                     android:textColor="@color/grey_800"
                     app:layout_constraintStart_toEndOf="@+id/imageView420"
-                    app:layout_constraintTop_toBottomOf="@+id/textView510" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView510"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/textView530"
@@ -376,11 +424,12 @@
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="2dp"
                     android:layout_marginEnd="12dp"
-                    android:text="."
+                    android:text="@string/dot_home"
                     android:textColor="@color/grey_800"
                     app:layout_constraintEnd_toStartOf="@+id/textView540"
                     app:layout_constraintStart_toEndOf="@+id/textView520"
-                    app:layout_constraintTop_toBottomOf="@+id/textView510" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView510"
+                    tools:ignore="TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/textView540"
@@ -389,10 +438,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="2dp"
-                    android:text="103 reviews"
+                    android:text="@string/num_103_reviews_home"
                     android:textColor="@color/grey_800"
                     app:layout_constraintStart_toEndOf="@+id/textView530"
-                    app:layout_constraintTop_toBottomOf="@+id/textView510" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView510"
+                    tools:ignore="TextContrastCheck" />
 
                 <ImageView
                     android:id="@+id/imageView430"
@@ -403,26 +453,42 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView500"
                     app:srcCompat="@drawable/heart"
-                    app:tint="@color/orange" />
+                    app:tint="@color/orange"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <Space
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="16dp" />
 
-                <ImageView
-                    android:id="@+id/imageView27"
-                    android:layout_width="wrap_content"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/community_3_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="@dimen/space"
+                    android:layout_marginTop="@dimen/space"
+                    android:layout_marginEnd="@dimen/space"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:cardMaxElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/cookbook_3" />
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView27"
+                        android:layout_width="fill_parent"
+                        android:layout_height="280dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/cookbook_3"
+                        tools:ignore="ContentDescription" />
+                </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:id="@+id/textView5000"
@@ -431,9 +497,10 @@
                     android:layout_height="66dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
-                    android:text="Resep Garang Asem Ayam Kampung"
+                    android:lineHeight="36sp"
+                    android:text="@string/resep_garang_asem_ayam_kampung"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+                    app:layout_constraintTop_toBottomOf="@+id/cardView3" />
 
 
                 <ImageView
@@ -442,9 +509,12 @@
                     android:layout_height="40dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="@dimen/space"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView5000"
-                    app:srcCompat="@drawable/avatar" />
+                    app:srcCompat="@drawable/avatar"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:id="@+id/textView5100"
@@ -453,7 +523,7 @@
                     android:layout_height="20dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
-                    android:text="Gayuh Tri Pinjungwati"
+                    android:text="@string/gayuh_tri_pinjungwati"
                     app:layout_constraintStart_toEndOf="@+id/imageView4100"
                     app:layout_constraintTop_toBottomOf="@+id/textView5000" />
 
@@ -465,7 +535,8 @@
                     app:layout_constraintStart_toEndOf="@+id/imageView4100"
                     app:layout_constraintTop_toBottomOf="@+id/textView5100"
                     app:srcCompat="@drawable/heart_filled"
-                    app:tint="@color/orange" />
+                    app:tint="@color/orange"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
 
                 <TextView
                     android:id="@+id/textView5200"
@@ -474,10 +545,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="2dp"
-                    android:text="130"
+                    android:text="@string/num_130_home"
                     android:textColor="@color/grey_800"
                     app:layout_constraintStart_toEndOf="@+id/imageView4200"
-                    app:layout_constraintTop_toBottomOf="@+id/textView5100" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView5100"
+                    tools:ignore="TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/textView5300"
@@ -487,11 +559,12 @@
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="2dp"
                     android:layout_marginEnd="12dp"
-                    android:text="."
+                    android:text="@string/dot_home"
                     android:textColor="@color/grey_800"
                     app:layout_constraintEnd_toStartOf="@+id/textView5400"
                     app:layout_constraintStart_toEndOf="@+id/textView5200"
-                    app:layout_constraintTop_toBottomOf="@+id/textView5100" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView5100"
+                    tools:ignore="TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/textView5400"
@@ -500,10 +573,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="2dp"
-                    android:text="103 reviews"
+                    android:text="@string/num_103_reviews_home"
                     android:textColor="@color/grey_800"
                     app:layout_constraintStart_toEndOf="@+id/textView5300"
-                    app:layout_constraintTop_toBottomOf="@+id/textView5100" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView5100"
+                    tools:ignore="TextContrastCheck" />
 
                 <ImageView
                     android:id="@+id/imageView4300"
@@ -514,90 +588,97 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView5000"
                     app:srcCompat="@drawable/heart"
-                    app:tint="@color/orange" />
+                    app:tint="@color/orange"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <Space
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="16dp" />
+
+            <LinearLayout
+                android:id="@+id/more_container_home"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/home_title_recoleta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space"
+                    android:layout_marginRight="@dimen/space"
+                    android:fontFamily="@font/cera_pro_regular"
+                    android:lineHeight="16sp"
+                    android:text="@string/orange_text_home"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/category_container_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/category_title"
+                    style="@style/home_title_recoleta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/space"
+                    android:layout_marginBottom="6dp"
+                    android:text="@string/category_title_home" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_marginHorizontal="@dimen/space"
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/textView8"
-                        style="@style/home_title_recoleta"
-                        android:layout_width="match_parent"
-                        android:layout_height="77dp"
-                        android:layout_marginLeft="@dimen/space"
-                        android:layout_marginRight="@dimen/space"
-                        android:text="Featured Community Recipes" />
+                    <Button
+                        android:id="@+id/btn_seasonal"
+                        style="@style/category_button"
+                        android:text="@string/seasonal_category" />
 
-                    <TextView
-                        android:id="@+id/textView37"
-                        style="@style/home_title_recoleta"
-                        android:layout_width="match_parent"
+                    <Button
+                        android:id="@+id/btn_drinks"
+                        style="@style/category_button"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/space"
-                        android:text="Category"
-                        android:textSize="20sp" />
+                        android:drawableTop="@drawable/category_drinks_rounded"
+                        android:text="@string/drinks_category"
+                        android:textAllCaps="false" />
 
-                    <TableLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/btn_cakes"
+                        style="@style/category_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/category_cakes_rounded"
+                        android:text="@string/cakes_category" />
 
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="@dimen/space"
-                            android:layout_marginRight="@dimen/space"
-                            android:textAlignment="center">
-
-                            <Button
-                                android:id="@+id/button6"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="@color/white"
-                                android:drawableTop="@drawable/category_1"
-                                android:text="Seasonal"
-                                android:textAllCaps="false" />
-
-                            <Button
-                                android:id="@+id/button5"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="@color/white"
-                                android:drawableTop="@drawable/category_2"
-                                android:text="Cakes"
-                                android:textAllCaps="false" />
-
-                            <Button
-                                android:id="@+id/button3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="@color/white"
-                                android:drawableTop="@drawable/category_3"
-                                android:text="Everyday"
-                                android:textAllCaps="false" />
-
-                            <Button
-                                android:id="@+id/button4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="@color/white"
-                                android:drawableTop="@drawable/category_4"
-                                android:text="Drinks"
-                                android:textAllCaps="false" />
-                        </TableRow>
-
-                    </TableLayout>
+                    <Button
+                        android:id="@+id/btn_everyday"
+                        style="@style/category_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/category_everyday_rounded"
+                        android:text="@string/everyday_category"
+                        android:textAllCaps="false" />
                 </LinearLayout>
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
         </LinearLayout>
     </ScrollView>
 
@@ -631,7 +712,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btn_home"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="@dimen/space"
@@ -645,7 +726,20 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/btn_search"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="@dimen/space"
+                android:background="#00000000"
+                android:drawableTop="@drawable/search"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                app:layout_constraintStart_toEndOf="@+id/btn_home"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn_cart"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginEnd="@dimen/space"
@@ -653,12 +747,12 @@
                 android:drawableTop="@drawable/cart"
                 android:gravity="center_vertical"
                 android:padding="12dp"
-                app:layout_constraintEnd_toStartOf="@+id/button5"
+                app:layout_constraintEnd_toStartOf="@+id/btn_calendar"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/btn_calendar"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginEnd="@dimen/space"
@@ -670,23 +764,10 @@
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="SpeakableTextPresentCheck" />
 
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginStart="@dimen/space"
-                android:background="#00000000"
-                android:drawableTop="@drawable/search"
-                android:gravity="center_vertical"
-                android:padding="12dp"
-                app:layout_constraintStart_toEndOf="@+id/button2"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="SpeakableTextPresentCheck" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/btn_add_home"
             android:layout_width="58dp"
             android:layout_height="58dp"
             android:background="@drawable/orange_circle"

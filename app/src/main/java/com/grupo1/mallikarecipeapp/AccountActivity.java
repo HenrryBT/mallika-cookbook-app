@@ -18,10 +18,12 @@ public class AccountActivity extends AppCompatActivity implements View.OnClickLi
         Button btnProfile = findViewById(R.id.btn_profile_account);
         Button btnBack = findViewById(R.id.btn_back_account);
         Button btnLiked = findViewById(R.id.btn_facebook_login);
+        Button btnLogout = findViewById(R.id.btn_logout);
 
         btnProfile.setOnClickListener(this);
         btnBack.setOnClickListener(this);
         btnLiked.setOnClickListener(this);
+        btnLogout.setOnClickListener(this);
     }
 
     @Override
@@ -32,5 +34,7 @@ public class AccountActivity extends AppCompatActivity implements View.OnClickLi
             startActivity(new Intent(this, HomeActivity.class));
         else if (view.getId() == R.id.btn_facebook_login)
             startActivity(new Intent(this, LikeActivity.class));
+        else if (view.getId() == R.id.btn_logout)
+            startActivity(new Intent(this, MainActivity.class));
     }
 }

@@ -11,7 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MallikaRecipeApp"
         tools:targetApi="31">
-
+        <activity
+            android:name=".Food1Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".LikeActivity"
             android:exported="false">
@@ -19,7 +25,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".ProfileActivity"
             android:exported="false">
@@ -27,7 +32,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".HomeActivity"
             android:exported="false">
@@ -35,21 +39,17 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".AccountActivity"
-
-            android:theme="@style/Theme.MallikaRecipeApp.NoActionBar"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"
             android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MallikaRecipeApp.NoActionBar"
             tools:ignore="LockedOrientationActivity">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:exported="true"

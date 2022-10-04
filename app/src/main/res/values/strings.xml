@@ -11,4 +11,42 @@ Fusce in iaculis turpis. Integer lectus orci, mollis eu felis et, congue iaculis
 Vestibulum nec dignissim arcu, in rutrum sapien. Quisque nec posuere turpis, in malesuada nulla. Fusce ac hendrerit orci. Aenean quis lectus ut metus finibus auctor. Aliquam fringilla pulvinar ipsum, et sodales ex sollicitudin ac. Aliquam eget sem ut massa euismod sollicitudin. Vivamus pellentesque elementum diam, ut volutpat justo convallis id. Fusce cursus suscipit ornare. Nunc gravida hendrerit euismod. Duis a orci viverra, consectetur neque at, aliquet magna. Vivamus eget diam vel tellus lacinia cursus in at justo. Nam pharetra metus accumsan est suscipit porttitor.
 
 Morbi vulputate sem nec condimentum eleifend. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam at tempus est, ac tincidunt elit. Maecenas mi leo, venenatis a lobortis pellentesque, semper sed diam. Ut a interdum risus, eu semper nisl. Etiam laoreet condimentum ante, quis rhoncus mauris ullamcorper non. Etiam et semper nunc, sed volutpat nisl. Donec lacinia finibus lacus, ac viverra nunc ullamcorper in. Suspendisse pellentesque, metus et tempor rutrum, nunc nunc ultrices tortor, finibus hendrerit nulla quam id turpis. Donec ut lacus justo. Cras venenatis consectetur mauris, ac mattis lectus vehicula eu.</string>
+    <string name="resep_be_sisit_ayam_khas_bali">Resep Be Sisit Ayam Khas Bali</string>
+    <string name="resep_rujak_mie_khas_palembang">Resep Rujak Mie Khas Palembang</string>
+    <string name="resep_masakan_udang_tahu_dengan_bumbu_tauco">Resep Masakan Udang Tahu dengan Bumbu Tauco</string>
+    <string name="resep_mie_sagu_khas_selat_panjang_nikmatnya_menggoda">Resep Mie Sagu Khas Selat Panjang, Nikmatnya Menggoda</string>
+    <string name="liked_recipe">Liked Recipe</string>
+    <string name="_40_min">40 min</string>
+    <string name="easy">Easy</string>
+    <string name="_41_min">40 min</string>
+    <string name="easy2">Easy</string>
+    <string name="_42_min">40 min</string>
+    <string name="easy3">Easy</string>
+    <string name="_43_min">40 min</string>
+    <string name="easy4">Easy</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="todo3">TODO</string>
+    <string name="todo4">TODO</string>
+    <string name="todo5">TODO</string>
+    <string name="todo6">TODO</string>
+    <string name="todo7">TODO</string>
+    <string name="todo8">TODO</string>
+    <string name="todo9">TODO</string>
+    <string name="todo10">TODO</string>
+    <string name="todo11">TODO</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="profile_name">Profile Name</string>
+    <string name="name">Fernando Sanchez</string>
+    <string name="email">Email</string>
+    <string name="mail">Fernando Sanchez</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="number">123567890</string>
+    <string name="bio">Bio</string>
+    <string name="biography">Fernando Sanchez</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="edit_photo">Edit Photo</string>
+    <string name="todo12">TODO</string>
+    <string name="todo13">TODO</string>
 </resources>

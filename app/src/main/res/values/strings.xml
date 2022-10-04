@@ -11,4 +11,19 @@ Fusce in iaculis turpis. Integer lectus orci, mollis eu felis et, congue iaculis
 Vestibulum nec dignissim arcu, in rutrum sapien. Quisque nec posuere turpis, in malesuada nulla. Fusce ac hendrerit orci. Aenean quis lectus ut metus finibus auctor. Aliquam fringilla pulvinar ipsum, et sodales ex sollicitudin ac. Aliquam eget sem ut massa euismod sollicitudin. Vivamus pellentesque elementum diam, ut volutpat justo convallis id. Fusce cursus suscipit ornare. Nunc gravida hendrerit euismod. Duis a orci viverra, consectetur neque at, aliquet magna. Vivamus eget diam vel tellus lacinia cursus in at justo. Nam pharetra metus accumsan est suscipit porttitor.
 
 Morbi vulputate sem nec condimentum eleifend. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam at tempus est, ac tincidunt elit. Maecenas mi leo, venenatis a lobortis pellentesque, semper sed diam. Ut a interdum risus, eu semper nisl. Etiam laoreet condimentum ante, quis rhoncus mauris ullamcorper non. Etiam et semper nunc, sed volutpat nisl. Donec lacinia finibus lacus, ac viverra nunc ullamcorper in. Suspendisse pellentesque, metus et tempor rutrum, nunc nunc ultrices tortor, finibus hendrerit nulla quam id turpis. Donec ut lacus justo. Cras venenatis consectetur mauris, ac mattis lectus vehicula eu.</string>
+    <string name="back_button_accout">Back button</string>
+    <string name="account_label">Account</string>
+    <string name="name_account">Nararaya Kirana</string>
+    <string name="email_account">nararaya.putri@gmail.com</string>
+    <string name="liked_recipe">Liked Recipe</string>
+    <string name="notifications">Notifications</string>
+    <string name="settings">Settings</string>
+    <string name="general">General</string>
+    <string name="about">About</string>
+    <string name="help_and_support">Help and Support</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="check_for_update">Check for Update</string>
+    <string name="logout">Logout</string>
+    <string name="todo">TODO</string>
 </resources>

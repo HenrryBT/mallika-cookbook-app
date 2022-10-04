@@ -10,6 +10,7 @@
         motion:autoTransition="animateToEnd">
        <KeyFrameSet>
        </KeyFrameSet>
+        <OnSwipe motion:springDamping="11.099" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
@@ -26,11 +27,13 @@
     <ConstraintSet android:id="@+id/end">
         <Constraint
             motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="137dp"
+            android:layout_height="155dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            android:id="@+id/imageView22" />
+            android:id="@+id/imageView22"
+            motion:layout_constraintVertical_bias="0.5"
+            motion:layout_constraintHorizontal_bias="0.5" />
     </ConstraintSet>
 </MotionScene>

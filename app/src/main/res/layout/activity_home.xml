@@ -155,17 +155,67 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/textView8"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="77dp"
-                    android:text="Featured Community Recipes"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.5" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        style="@style/home_title_recoleta"
+                        android:layout_width="match_parent"
+                        android:layout_height="77dp"
+                        android:text="Featured Community Recipes" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center">
+
+                            <Button
+                                android:id="@+id/button6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:drawableTop="@drawable/category_1"
+                                android:text="Seasonal"
+                                android:textAllCaps="false" />
+
+                            <Button
+                                android:id="@+id/button5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:drawableTop="@drawable/category_2"
+                                android:text="Cakes"
+                                android:textAllCaps="false" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:drawableTop="@drawable/category_3"
+                                android:text="Everyday"
+                                android:textAllCaps="false" />
+
+                            <Button
+                                android:id="@+id/button4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:drawableTop="@drawable/category_4"
+                                android:text="Drinks"
+                                android:textAllCaps="false" />
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
@@ -178,6 +228,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2"/>
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" >
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

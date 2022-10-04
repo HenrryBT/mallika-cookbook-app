@@ -20,7 +20,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,16 +28,17 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="60dp">
 
-                <ImageView
-                    android:id="@+id/imageView17"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <Button
+                    android:id="@+id/btn_profile_home"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:layout_marginStart="16dp"
+                    android:background="@drawable/avatar"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.5"
-                    app:srcCompat="@drawable/avatar" />
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:id="@+id/textView10"
@@ -45,8 +46,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="Hi Nararaya"
-                    app:layout_constraintStart_toEndOf="@+id/imageView17"
+                    android:text="@string/hi_nararaya"
+                    app:layout_constraintStart_toEndOf="@+id/btn_profile_home"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
@@ -56,8 +57,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="4dp"
-                    android:text="What are you cooking today?"
-                    app:layout_constraintStart_toEndOf="@+id/imageView17"
+                    android:text="@string/what_are_you_cooking_today"
+                    app:layout_constraintStart_toEndOf="@+id/btn_profile_home"
                     app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
                 <ImageView
@@ -69,7 +70,9 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.5"
-                    app:srcCompat="@drawable/bell" />
+                    app:srcCompat="@drawable/bell"
+                    android:contentDescription="@string/todo19" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -82,7 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="Cookbooks"
+                    android:text="@string/cookbooks"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -127,21 +130,21 @@
                     <RadioButton
                         android:id="@+id/rbReceta1"
                         style="@style/radio_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="20dp"
                         android:layout_height="wrap_content"
                         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
 
                     <RadioButton
                         android:id="@+id/rbReceta2"
                         style="@style/radio_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="20dp"
                         android:layout_height="wrap_content"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <RadioButton
                         android:id="@+id/rbReceta3"
                         style="@style/radio_button"
-                        android:layout_width="match_parent"
+                        android:layout_width="20dp"
                         android:layout_height="wrap_content"
                         tools:ignore="TouchTargetSizeCheck" />
                 </RadioGroup>

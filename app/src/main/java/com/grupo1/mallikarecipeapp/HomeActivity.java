@@ -23,6 +23,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         rbReceta1.setOnClickListener(this);
         rbReceta2.setOnClickListener(this);
         rbReceta3.setOnClickListener(this);
+
+        rbReceta1.setChecked(true);
+        mostrarReceta1();
     }
 
     @Override

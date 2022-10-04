@@ -435,6 +435,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView27" />
 
+
                 <ImageView
                     android:id="@+id/imageView4100"
                     android:layout_width="40dp"
@@ -514,6 +515,86 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView5000"
                     app:srcCompat="@drawable/heart"
                     app:tint="@color/orange" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        style="@style/home_title_recoleta"
+                        android:layout_width="match_parent"
+                        android:layout_height="77dp"
+                        android:layout_marginLeft="@dimen/space"
+                        android:layout_marginRight="@dimen/space"
+                        android:text="Featured Community Recipes" />
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        style="@style/home_title_recoleta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space"
+                        android:text="Category"
+                        android:textSize="20sp" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/space"
+                            android:layout_marginRight="@dimen/space"
+                            android:textAlignment="center">
+
+                            <Button
+                                android:id="@+id/button6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:drawableTop="@drawable/category_1"
+                                android:text="Seasonal"
+                                android:textAllCaps="false" />
+
+                            <Button
+                                android:id="@+id/button5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:drawableTop="@drawable/category_2"
+                                android:text="Cakes"
+                                android:textAllCaps="false" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:drawableTop="@drawable/category_3"
+                                android:text="Everyday"
+                                android:textAllCaps="false" />
+
+                            <Button
+                                android:id="@+id/button4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:drawableTop="@drawable/category_4"
+                                android:text="Drinks"
+                                android:textAllCaps="false" />
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

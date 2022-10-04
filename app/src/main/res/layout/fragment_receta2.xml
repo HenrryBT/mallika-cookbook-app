@@ -5,6 +5,8 @@
     android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginStart="18dp"
+    android:layout_marginEnd="18dp"
     android:background="@color/white"
     tools:context=".fragments.Receta1Fragment">
 
@@ -22,15 +24,16 @@
 
         <ImageView
             android:id="@+id/imageView19"
-            android:layout_width="320dp"
+            android:layout_width="0dp"
             android:layout_height="288dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/todo17"
             android:scaleType="centerCrop"
             android:src="@drawable/fragment1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="@string/todo17" />
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

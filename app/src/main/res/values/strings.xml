@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Mallika Recipe App</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="back_button_accout">Back button</string>
     <string name="account_label">Account</string>
@@ -95,4 +95,12 @@
     <string name="seasonal_category">Seasonal</string>
     <string name="cakes_category">Cakes</string>
     <string name="everyday_category">Everyday</string>
+    <string name="fr2_likes">22,8k Likes</string>
+    <string name="fr2_recipes">16 recipes</string>
+    <string name="fr2_caption">Easy recipe to share with your family and friends</string>
+    <string name="fr2_title">Nice Toasts for Breakfast</string>
+    <string name="fr3_title"><![CDATA[Fast & Tasty Pancakes with Elders]]></string>
+    <string name="fr3_caption">Fast and easy to do for your morning breakfast or as a desert.</string>
+    <string name="fr3_likes">33.2k Likes</string>
+    <string name="fr3_recipes">4 recipes</string>
 </resources>

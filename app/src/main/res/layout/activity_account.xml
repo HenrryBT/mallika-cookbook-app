@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey_600"
+    android:background="@color/white"
     tools:context=".AccountActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -237,10 +237,10 @@
 
             <Button
                 android:id="@+id/btn_about"
+                style="@style/vertical_button_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/about"
-                style="@style/vertical_button_list" />
+                android:text="@string/about" />
 
             <Button
                 android:id="@+id/btn_help_support"
@@ -275,7 +275,6 @@
                 style="@style/vertical_button_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableEnd="@null"
                 android:text="@string/logout" />
         </LinearLayout>
 

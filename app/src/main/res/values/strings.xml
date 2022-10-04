@@ -89,5 +89,21 @@ Morbi vulputate sem nec condimentum eleifend. Class aptent taciti sociosqu ad li
     <string name="hi_nararaya">Hi Nararaya</string>
     <string name="what_are_you_cooking_today">What are you cooking today?</string>
     <string name="todo19">TODO</string>
+    <string name="drinks_category">Drinks</string>
+    <string name="dot_home">.</string>
+    <string name="num_130_home">130</string>
+    <string name="num_103_reviews_home">103 reviews</string>
+    <string name="orange_text_home">Show All Recipe by Community</string>
+    <string name="category_title_home">Category</string>
+    <string name="gayuh_tri_pinjungwati">Gayuh Tri Pinjungwati</string>
+    <string name="resep_garang_asem_ayam_kampung">Resep Garang Asem Ayam Kampung</string>
+    <string name="community_title_home">Featured Community Recipes</string>
+    <string name="community_caption_home">Get lots of recipe inspiration from the community</string>
+    <string name="resep_ayam_kuah_santan_pedas_lezat">Resep Ayam Kuah Santan Pedas Lezat</string>
+    <string name="nadia_putri">Nadia Putri</string>
+    <string name="resep_kare_ayam_kuah_pedas">Resep Kare Ayam Kuah Pedas</string>
+    <string name="seasonal_category">Seasonal</string>
+    <string name="cakes_category">Cakes</string>
+    <string name="everyday_category">Everyday</string>
     >>>>>>> 986cf7ac1702eb54220e4f9f4984cca9a9fc4c3d
 </resources>

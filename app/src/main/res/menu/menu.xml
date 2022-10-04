@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/edit"
+          android:title="Edit"
+          android:icon="@drawable/pencil"/>
+    <item android:id="@+id/aboveitem" android:title="Add Item Above"/>
+    <item android:id="@+id/belowitem" android:title="Add Item Below"/>
+    <item android:id="@+id/set" android:title="Set as Item"/>
+    <item android:id="@+id/delete" android:title="Delete"/>
+
+</menu>

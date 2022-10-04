@@ -8,9 +8,9 @@ Design base on [Mallika CookbookApp](https://www.behance.net/gallery/115230117/M
 - Sánchez Bedón Fernando Jesús
 
 ## Requirements
-- La aplicación debe contar con al menos 6 activities(2 puntos).
-- Incluir al menos 2 fragments (1 punto).
-- Incluir al menos 1 menú (1 punto).
+- [x] La aplicación debe contar con al menos 6 activities(2 puntos).
+- [x] Incluir al menos 2 fragments (1 punto).
+- [ ] Incluir al menos 1 menú (1 punto).
 - La aplicación debe tener un ícono (1 punto).
 - Un SplashScreen adicional que debe tener alguna animación, diferente a la usada en clase (1 punto).
 - Los títulos, botones, mensajes y fotografías a emplear deben de ser de acuerdo al tema a desarrollar, el texto normal puede ser Lorem Ipsum es decir texto falso. (2 puntos).

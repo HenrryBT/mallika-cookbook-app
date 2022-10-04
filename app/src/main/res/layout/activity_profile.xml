@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ProfileActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -11,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="60dp"
+        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -167,10 +169,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="@string/todo12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        app:srcCompat="@drawable/avatar"
-        android:contentDescription="@string/todo12" />
+        app:srcCompat="@drawable/avatar" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -178,11 +180,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="33dp"
+        android:contentDescription="@string/todo13"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
         app:srcCompat="@drawable/camera"
-        tools:ignore="ImageContrastCheck"
-        android:contentDescription="@string/todo13" />
+        tools:ignore="ImageContrastCheck" />
 
     <View
         android:id="@+id/divider2"

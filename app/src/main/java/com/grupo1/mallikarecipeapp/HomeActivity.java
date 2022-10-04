@@ -42,19 +42,19 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     private void mostrarReceta1() {
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.contenedor, new Receta1Fragment())
+                .replace(R.id.cookbook, new Receta1Fragment())
                 .commit();
     }
 
     private void mostrarReceta2() {
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.contenedor, new Receta2Fragment())
+                .replace(R.id.cookbook, new Receta2Fragment())
                 .commit();
     }
 
     private void mostrarReceta3() {
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.contenedor, new Receta3Fragment())
+                .replace(R.id.cookbook, new Receta3Fragment())
                 .commit();
     }
 }

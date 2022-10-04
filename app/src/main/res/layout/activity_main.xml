@@ -58,6 +58,7 @@
         android:layout_marginTop="36dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:text="Phone Number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -65,7 +66,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_send_otp"
         style="@style/primary_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -151,7 +152,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/btn_facebook_login"
         style="@style/login_button_text"
         android:layout_width="180dp"
         android:layout_height="53dp"
@@ -163,10 +164,10 @@
         android:text="Facebook"
         android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button11" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_apple_login" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/btn_google_login"
         style="@style/login_button_text"
         android:layout_width="180dp"
         android:layout_height="53dp"
@@ -178,10 +179,10 @@
         android:text="Google"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button11" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_apple_login" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/btn_apple_login"
         style="@style/login_button_text"
         android:layout_width="250dp"
         android:layout_height="53dp"
@@ -205,6 +206,6 @@
         android:text="OR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_send_otp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

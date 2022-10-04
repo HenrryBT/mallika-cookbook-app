@@ -2,8 +2,11 @@ package com.grupo1.mallikarecipeapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 
 import com.grupo1.mallikarecipeapp.fragments.Receta1Fragment;
@@ -16,18 +19,22 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
         RadioButton rbReceta1 = findViewById(R.id.rbReceta1);
         RadioButton rbReceta2 = findViewById(R.id.rbReceta2);
         RadioButton rbReceta3 = findViewById(R.id.rbReceta3);
+        Button btnAccount = findViewById(R.id.btn_profile_home);
 
         rbReceta1.setOnClickListener(this);
         rbReceta2.setOnClickListener(this);
         rbReceta3.setOnClickListener(this);
+        btnAccount.setOnClickListener(this);
 
         rbReceta1.setChecked(true);
         mostrarReceta1();
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View view) {
         switch (view.getId()){
@@ -39,6 +46,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.rbReceta3:
                 mostrarReceta3();
+                break;
+            case R.id.btn_profile_home:
+                mostrarAccount();
                 break;
         }
     }
@@ -59,5 +69,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.cookbook, new Receta3Fragment())
                 .commit();
+    }
+
+    private void mostrarAccount() {
+        startActivity(new Intent(this, AccountActivity.class));
     }
 }

@@ -20,7 +20,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
@@ -36,7 +36,7 @@
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in neque congue, ullamcorper enim nec, vehicula nibh. Donec libero magna, tincidunt a leo nec, fermentum mollis felis. Fusce volutpat est enim, sed rutrum tortor facilisis vitae. In volutpat bibendum lacus, sit amet placerat dui pharetra a. Vivamus sagittis lorem est, quis suscipit nisi euismod eget. Vestibulum eget ante at dui rutrum ultricies. Aliquam diam ligula, dignissim a semper non, vestibulum at risus. Phasellus odio nibh, rhoncus vitae nisl ac, iaculis tempus quam. Sed id euismod nulla. Nullam luctus tincidunt quam in luctus. Cras vitae ante non purus efficitur efficitur. Morbi vulputate congue nisi, at condimentum arcu sagittis at. Praesent semper mi eget nibh efficitur tempus.  Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque id lobortis leo, id porta neque. Nunc nec vehicula justo. Nulla luctus vel quam et venenatis. Suspendisse et justo eros. Donec semper posuere metus, vel dignissim sapien vestibulum ac. Nulla feugiat diam vitae pretium pharetra. Phasellus suscipit velit nec eros semper, ut sagittis sem sagittis. Donec in auctor ex. Nulla efficitur, ex sed blandit euismod, dui turpis aliquam tortor, mattis dapibus eros mi at leo.  Fusce in iaculis turpis. Integer lectus orci, mollis eu felis et, congue iaculis justo. In varius varius imperdiet. Proin pretium hendrerit ligula, sit amet ullamcorper enim pulvinar sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse tristique vestibulum convallis. In quam nunc, dapibus nec diam sollicitudin, vehicula varius nulla. In tempus, ipsum non viverra gravida, sem velit sagittis justo, at bibendum mauris nibh sed neque. Phasellus suscipit enim magna, quis malesuada nunc commodo ac. Duis sodales, dui sit amet dictum iaculis, lorem massa dictum augue, id malesuada massa mauris in nunc. Integer quis egestas mauris. In sollicitudin tellus a ante venenatis sodales ac a est. Sed a diam at justo aliquam semper eu sit amet sem. Pellentesque aliquet id enim non facilisis. Suspendisse enim ante, finibus id commodo quis, vestibulum et nunc.  Vestibulum nec dignissim arcu, in rutrum sapien. Quisque nec posuere turpis, in malesuada nulla. Fusce ac hendrerit orci. Aenean quis lectus ut metus finibus auctor. Aliquam fringilla pulvinar ipsum, et sodales ex sollicitudin ac. Aliquam eget sem ut massa euismod sollicitudin. Vivamus pellentesque elementum diam, ut volutpat justo convallis id. Fusce cursus suscipit ornare. Nunc gravida hendrerit euismod. Duis a orci viverra, consectetur neque at, aliquet magna. Vivamus eget diam vel tellus lacinia cursus in at justo. Nam pharetra metus accumsan est suscipit porttitor.  Morbi vulputate sem nec condimentum eleifend. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam at tempus est, ac tincidunt elit. Maecenas mi leo, venenatis a lobortis pellentesque, semper sed diam. Ut a interdum risus, eu semper nisl. Etiam laoreet condimentum ante, quis rhoncus mauris ullamcorper non. Etiam et semper nunc, sed volutpat nisl. Donec lacinia finibus lacus, ac viverra nunc ullamcorper in. Suspendisse pellentesque, metus et tempor rutrum, nunc nunc ultrices tortor, finibus hendrerit nulla quam id turpis. Donec ut lacus justo. Cras venenatis consectetur mauris, ac mattis lectus vehicula eu." />
+                android:text="@string/home" />
 
         </LinearLayout>
     </ScrollView>
@@ -56,7 +56,7 @@
             style="@style/radio_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
 
         <RadioButton
             android:id="@+id/rbReceta2"

@@ -31,7 +31,7 @@
     </style>
 
     <style name="user_title_cera">
-        <item name="android:fontFamily">@font/fontspring_cerapro_medium</item>
+        <item name="android:fontFamily">@font/cera_pro_medium</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textAlignment">viewStart</item>
         <item name="flow_verticalAlign">top</item>
@@ -40,7 +40,7 @@
     </style>
 
     <style name="user_caption">
-        <item name="android:fontFamily">@font/fontspring_cerapro_regular</item>
+        <item name="android:fontFamily">@font/cera_pro_regular</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textAlignment">viewStart</item>
         <item name="flow_verticalAlign">top</item>
@@ -49,7 +49,7 @@
     </style>
 
     <style name="content_description_cera">
-        <item name="android:fontFamily">@font/fontspring_cerapro_regular</item>
+        <item name="android:fontFamily">@font/cera_pro_regular</item>
         <item name="android:textSize">16sp</item>
         <item name="android:lineHeight">24sp</item>
         <item name="android:textAlignment">center</item>
@@ -58,7 +58,7 @@
     </style>
 
     <style name="main_caption_cera">
-        <item name="android:fontFamily">@font/fontspring_cerapro_regular</item>
+        <item name="android:fontFamily">@font/cera_pro_regular</item>
         <item name="android:textSize">16sp</item>
         <item name="android:lineHeight">16sp</item>
         <item name="android:textAlignment">viewStart</item>
@@ -68,7 +68,7 @@
     </style>
 
     <style name="cookbook_rating_cera">
-        <item name="android:fontFamily">@font/fontspring_cerapro_regular</item>
+        <item name="android:fontFamily">@font/cera_pro_regular</item>
         <item name="android:textSize">14sp</item>
         <item name="android:lineHeight">14sp</item>
         <item name="android:textAlignment">center</item>
@@ -77,7 +77,7 @@
     </style>
 
     <style name="edit_photo_cera">
-        <item name="android:fontFamily">@font/fontspring_cerapro_regular</item>
+        <item name="android:fontFamily">@font/cera_pro_regular</item>
         <item name="android:textSize">16sp</item>
         <item name="android:lineHeight">16sp</item>
         <item name="android:textAlignment">viewStart</item>
@@ -87,7 +87,7 @@
     </style>
 
     <style name="base_cera">
-        <item name="android:fontFamily">@font/fontspring_cerapro_regular</item>
+        <item name="android:fontFamily">@font/cera_pro_regular</item>
         <item name="android:textSize">16sp</item>
         <item name="android:lineHeight">16sp</item>
         <item name="android:textAlignment">viewStart</item>
@@ -97,7 +97,7 @@
     </style>
 
     <style name="base_fade_cera">
-        <item name="android:fontFamily">@font/fontspring_cerapro_regular</item>
+        <item name="android:fontFamily">@font/cera_pro_regular</item>
         <item name="android:textSize">12sp</item>
         <item name="android:lineHeight">12sp</item>
         <item name="android:textAlignment">viewStart</item>
@@ -107,7 +107,7 @@
     </style>
 
     <style name="like_fade_cera">
-        <item name="android:fontFamily">@font/fontspring_cerapro_regular</item>
+        <item name="android:fontFamily">@font/cera_pro_regular</item>
         <item name="android:textSize">12sp</item>
         <item name="android:lineHeight">12sp</item>
         <item name="android:textAlignment">viewStart</item>
@@ -117,7 +117,7 @@
     </style>
 
     <style name="primary_button">
-        <item name="android:fontFamily">@font/fontspring_cerapro_regular</item>
+        <item name="android:fontFamily">@font/cera_pro_regular</item>
         <item name="android:textSize">16sp</item>
         <item name="android:lineHeight">16sp</item>
         <item name="android:textAlignment">center</item>
@@ -127,7 +127,7 @@
     </style>
 
     <style name="account_category_cera">
-        <item name="android:fontFamily">@font/fontspring_cerapro_regular</item>
+        <item name="android:fontFamily">@font/cera_pro_regular</item>
         <item name="android:textSize">16sp</item>
         <item name="android:lineHeight">16sp</item>
         <item name="android:textAlignment">viewStart</item>
@@ -136,7 +136,7 @@
     </style>
 
     <style name="community_rating_cera">
-        <item name="android:fontFamily">@font/fontspring_cerapro_regular</item>
+        <item name="android:fontFamily">@font/cera_pro_regular</item>
         <item name="android:textSize">14sp</item>
         <item name="android:lineHeight">14sp</item>
         <item name="android:textAlignment">viewStart</item>
@@ -155,7 +155,7 @@
     </style>
 
     <style name="caption_mallika">
-        <item name="android:fontFamily">@font/fontspring_cerapro_regular</item>
+        <item name="android:fontFamily">@font/cera_pro_regular</item>
         <item name="android:textSize">16.96sp</item>
         <item name="android:lineHeight">16.96sp</item>
         <item name="android:textAlignment">center</item>
@@ -164,7 +164,7 @@
     </style>
 
     <style name="hint_phone_number">
-        <item name="android:fontFamily">@font/fontspring_cerapro_regular</item>
+        <item name="android:fontFamily">@font/cera_pro_regular</item>
         <item name="android:textSize">16sp</item>
         <item name="android:lineHeight">16sp</item>
         <item name="android:textAlignment">viewStart</item>
@@ -172,7 +172,7 @@
     </style>
 
     <style name="login_button_text">
-        <item name="android:fontFamily">@font/fontspring_cerapro_regular</item>
+        <item name="android:fontFamily">@font/cera_pro_regular</item>
         <item name="android:textSize">16sp</item>
         <item name="android:lineHeight">16sp</item>
         <item name="android:textAlignment">center</item>
@@ -181,7 +181,7 @@
     </style>
 
     <style name="privacy_text">
-        <item name="android:fontFamily">@font/fontspring_cerapro_regular</item>
+        <item name="android:fontFamily">@font/cera_pro_regular</item>
         <item name="android:textSize">12sp</item>
         <item name="android:lineHeight">20sp</item>
         <item name="android:textAlignment">center</item>
@@ -196,7 +196,7 @@
         <item name="android:background">@color/white</item>
         <item name="android:textAlignment">viewStart</item>
         <item name="android:textColor">@color/black</item>
-        <item name="android:fontFamily">@font/fontspring_cerapro_regular</item>
+        <item name="android:fontFamily">@font/cera_pro_regular</item>
         <item name="android:paddingHorizontal">10dp</item>
     </style>
 
@@ -205,7 +205,7 @@
         <item name="android:stateListAnimator">@null</item>
         <item name="android:layout_margin">0dp</item>
         <item name="android:drawableRight">@drawable/chevron_circle_right</item>
-        <item name="android:fontFamily">@font/fontspring_cerapro_regular</item>
+        <item name="android:fontFamily">@font/cera_pro_regular</item>
         <item name="android:gravity">center|left</item>
         <item name="android:letterSpacing">@dimen/letter_spacing</item>
         <item name="android:paddingHorizontal">0dp</item>

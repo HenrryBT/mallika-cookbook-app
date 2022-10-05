@@ -16,6 +16,16 @@
 
     </style>
 
+    <!-- Splash Theme -->
+    <style name="Theme.MallikaRecipeAppSplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+    </style>
+
     <style name="Theme.MallikaRecipeApp.NoActionBar">
         <!-- este tema herededa las caraterísticas de Theme.MallikaRecipeApp -->
         <item name="windowActionBar">false</item>

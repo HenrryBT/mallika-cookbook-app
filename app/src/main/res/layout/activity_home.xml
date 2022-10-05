@@ -29,7 +29,7 @@
                 android:id="@+id/user_nav_home"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginTop="60dp">
+                android:layout_marginTop="@dimen/space">
 
                 <Button
                     android:id="@+id/btn_profile_home"

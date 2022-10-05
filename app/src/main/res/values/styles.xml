@@ -242,4 +242,33 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">14sp</item>
     </style>
+
+    <style name="fragment_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">@dimen/space</item>
+        <item name="android:background">@drawable/fragment_box_round</item>
+    </style>
+
+    <style name="fragment_container">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">478dp</item>
+        <item name="android:layout_marginStart">@dimen/space</item>
+        <item name="android:layout_marginTop">@dimen/space</item>
+        <item name="android:layout_marginEnd">@dimen/space</item>
+        <item name="android:layout_marginBottom">@dimen/space</item>
+    </style>
+
+    <style name="fragment_cardview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">300dp</item>
+    </style>
+
+    <style name="fragment_image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:contentDescription">@string/todo16</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
 </resources>

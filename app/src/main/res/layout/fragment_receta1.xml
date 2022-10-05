@@ -9,27 +9,32 @@
     <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
+        style="@style/fragment_container"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/space"
+        android:layout_marginTop="@dimen/space"
+        android:layout_marginEnd="@dimen/space"
+        android:layout_marginBottom="@dimen/space"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        style="@style/fragment_container">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.cardview.widget.CardView
+            style="@style/fragment_cardview"
             app:cardCornerRadius="12dp"
             app:cardElevation="0dp"
             app:cardMaxElevation="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            style="@style/fragment_cardview">
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/imageViewsand"
-                android:src="@drawable/main"
                 style="@style/fragment_image"
+                android:src="@drawable/main"
                 tools:ignore="contentDescription" />
         </androidx.cardview.widget.CardView>
 

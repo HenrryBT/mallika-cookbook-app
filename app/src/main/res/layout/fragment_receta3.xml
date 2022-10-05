@@ -13,7 +13,7 @@
         android:id="@+id/constraintLayout3"
         style="@style/fragment_container"
         android:layout_width="0dp"
-        android:layout_height="478dp"
+        android:layout_height="0dp"
         android:layout_marginStart="@dimen/space"
         android:layout_marginTop="@dimen/space"
         android:layout_marginEnd="@dimen/space"

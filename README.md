@@ -24,6 +24,7 @@ Design base on [Mallika Cookbook App](https://www.behance.net/gallery/115230117/
 - El proyecto lo deben sustentar, para ello graban un video corto en formato mp4  entre 1 minuto a maximo 4 minutos, pueden utilizar https://obsproject.com/es/download. El video lo suben a un drive **(2 puntos)**
 - Para la entrega de la tarea, la debe subir un alumno del grupo, indicando: Los integrantes indicando su porcentaje de participación. Deben subir el proyecto zipeado y el video a un drive y el enlace indicarlo en la plataforma (Deben asegurarse que sea publico y que no pida permisos). Deben indicar también la plantilla de la que se basaron. **(1 punto)**
 
+
 ## App Template
 ![Thumbnail](https://user-images.githubusercontent.com/52585081/196245891-fdcb2ff0-aa9c-4d8d-a282-ebbd86d7f9dd.png)
 ![Frame 263](https://user-images.githubusercontent.com/52585081/196245964-4ce069bc-eb27-4bb1-b84a-9b22f4d2ffd4.png)

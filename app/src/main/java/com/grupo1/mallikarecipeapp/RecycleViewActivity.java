@@ -39,18 +39,18 @@ public class RecycleViewActivity extends AppCompatActivity {
 
     private void readData() {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = Total.rootService;
+        String url = Total.rootService + "search.php";
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Log.d("DATOS",response);
+                        Log.d("DATA",response);
                         writeList(response);
                     }
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.d("DATOSERROR", error.getMessage());
+                Log.d("DATAERROR", error.getMessage());
             }
         });
         queue.add(stringRequest);

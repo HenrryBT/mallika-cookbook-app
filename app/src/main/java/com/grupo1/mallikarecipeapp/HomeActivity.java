@@ -29,6 +29,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         RadioButton rbReceta3 = findViewById(R.id.rbReceta3);
         Button btnAccount = findViewById(R.id.btn_profile_home);
         Button btnHome = findViewById(R.id.btn_home);
+        Button btnSearch = findViewById(R.id.btn_search);
 
         scrollView = findViewById(R.id.home_scroll_view);
 
@@ -37,6 +38,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         rbReceta3.setOnClickListener(this);
         btnAccount.setOnClickListener(this);
         btnHome.setOnClickListener(this);
+        btnSearch.setOnClickListener(this);
 
         rbReceta1.setChecked(true);
         showRecipe1();
@@ -61,7 +63,14 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_home:
                 goToHome();
                 break;
+            case R.id.btn_search:
+                goToSearch();
+                break;
         }
+    }
+
+    private void goToSearch() {
+        startActivity(new Intent(this, RecycleViewActivity.class));
     }
 
     private void showRecipe1() {

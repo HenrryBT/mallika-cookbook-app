@@ -36,7 +36,8 @@ public class RecipeAdapter extends RecyclerView.Adapter <RecipeAdapter.ViewHolde
     public void onBindViewHolder(@NonNull RecipeAdapter.ViewHolder holder, int position) {
         HashMap<String,String> map = arrayList.get(position);
         holder.tv_name.setText(map.get("name"));
-        holder.tv_time.setText(map.get("time"));
+        int time = Integer.parseInt(map.get("time"));
+        holder.tv_time.setText(map.get(time + " min"));
         holder.tv_difficulty.setText(map.get("difficulty"));
         String root = Total.rootService + "images/" + map.get("picture");
         Picasso.get().load(root).into(holder.iv_picture);

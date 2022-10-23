@@ -61,7 +61,14 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_home:
                 goToHome();
                 break;
+            case R.id.btn_search:
+                goToSearch();
+                break;
         }
+    }
+
+    private void goToSearch() {
+        startActivity(new Intent(this, RecycleViewActivity.class));
     }
 
     private void showRecipe1() {

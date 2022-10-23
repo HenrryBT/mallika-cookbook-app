@@ -4,15 +4,22 @@
 
     <application
         android:allowBackup="true"
-        android:label="@string/app_name"
         android:icon="@mipmap/ic_mallika"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_mallika_round"
         android:theme="@style/Theme.MallikaRecipeApp.NoActionBar"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".RecycleViewActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".SplashActivity"
-            android:theme="@style/Theme.MallikaRecipeAppSplash"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.MallikaRecipeAppSplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -59,4 +66,5 @@
                 android:value="" />
         </activity>
     </application>
+
 </manifest>

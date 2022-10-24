@@ -123,4 +123,9 @@
     <string name="email30">Email</string>
     <string name="number30">Number</string>
     <string name="biography30">Biography</string>
+    <string name="resep_ayam">Resep Ayam Kuah Santan Pedas Lezat</string>
+    <string name="t_40_min">40 min</string>
+    <string name="search_recipe">Search Recipe</string>
+    <string name="recipe_title_ingredient">Recipe Title, Ingredient</string>
+    <string name="last_seen">Last Seen</string>
 </resources>

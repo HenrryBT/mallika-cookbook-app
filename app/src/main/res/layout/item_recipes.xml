@@ -13,7 +13,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:lineHeight="24sp"
-        android:text="Resep Ayam Kuah Santan Pedas Lezat"
+        android:text="@string/resep_ayam"
         app:layout_constraintStart_toEndOf="@+id/cardView4"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="40 min"
+        android:text="@string/t_40_min"
         app:layout_constraintStart_toEndOf="@+id/imageView33"
         app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Easy"
+        android:text="@string/easy"
         app:layout_constraintStart_toEndOf="@+id/imageView34"
         app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
@@ -52,7 +52,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/search_1" />
+            app:srcCompat="@drawable/search_1"
+            tools:ignore="contentDescription,ImageContrastCheck" />
     </androidx.cardview.widget.CardView>
 
     <ImageView
@@ -63,7 +64,8 @@
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toEndOf="@+id/cardView4"
         app:layout_constraintTop_toBottomOf="@+id/tv_name"
-        app:srcCompat="@drawable/clock" />
+        app:srcCompat="@drawable/clock"
+        tools:ignore="contentDescription,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView34"
@@ -73,7 +75,8 @@
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toEndOf="@+id/tv_time"
         app:layout_constraintTop_toBottomOf="@+id/tv_name"
-        app:srcCompat="@drawable/dinner" />
+        app:srcCompat="@drawable/dinner"
+        tools:ignore="contentDescription,ImageContrastCheck" />
 
     <View
         android:id="@+id/divider16"

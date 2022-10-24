@@ -16,10 +16,11 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class RecipeAdapter extends RecyclerView.Adapter <RecipeAdapter.ViewHolder> {
+public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.ViewHolder> {
 
-    ArrayList<HashMap<String,String>> arrayList;
-    public RecipeAdapter(ArrayList<HashMap<String,String>> arrayList) {
+    ArrayList<HashMap<String, String>> arrayList;
+
+    public RecipeAdapter(ArrayList<HashMap<String, String>> arrayList) {
         this.arrayList = arrayList;
     }
 
@@ -34,7 +35,7 @@ public class RecipeAdapter extends RecyclerView.Adapter <RecipeAdapter.ViewHolde
 
     @Override
     public void onBindViewHolder(@NonNull RecipeAdapter.ViewHolder holder, int position) {
-        HashMap<String,String> map = arrayList.get(position);
+        HashMap<String, String> map = arrayList.get(position);
         holder.tv_name.setText(map.get("name"));
         int time = Integer.parseInt(map.get("time"));
         holder.tv_time.setText(time + " min");
@@ -51,6 +52,7 @@ public class RecipeAdapter extends RecyclerView.Adapter <RecipeAdapter.ViewHolde
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView tv_name, tv_time, tv_difficulty;
         ImageView iv_picture;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tv_name = itemView.findViewById(R.id.tv_name);

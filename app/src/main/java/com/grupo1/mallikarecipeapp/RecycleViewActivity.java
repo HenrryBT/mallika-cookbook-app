@@ -3,8 +3,11 @@ package com.grupo1.mallikarecipeapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.SimpleAdapter;
 
@@ -24,9 +27,8 @@ import org.json.JSONException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class RecycleViewActivity extends AppCompatActivity {
+public class RecycleViewActivity extends AppCompatActivity implements View.OnClickListener {
     private ActivityRecycleViewBinding binding;
-    ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,17 +36,23 @@ public class RecycleViewActivity extends AppCompatActivity {
         binding = ActivityRecycleViewBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        Button backButton = binding.btnBackSearch;
+        Button homeButton = binding.btnHome;
+
+        backButton.setOnClickListener(this);
+        homeButton.setOnClickListener(this);
+
         readData();
     }
 
     private void readData() {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = Total.rootService + "search.php";
+        String url = Total.rootService + "search";
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Log.d("DATA",response);
+                        Log.d("DATA", response);
                         writeList(response);
                     }
                 }, new Response.ErrorListener() {
@@ -57,19 +65,19 @@ public class RecycleViewActivity extends AppCompatActivity {
     }
 
     private void writeList(String response) {
-        ArrayList<HashMap<String,String>> arrayList = new ArrayList<>();
+        ArrayList<HashMap<String, String>> arrayList = new ArrayList<>();
         try {
             JSONArray jsonArray = new JSONArray(response);
-            for( int i = 0; i< jsonArray.length(); i++){
+            for (int i = 0; i < jsonArray.length(); i++) {
                 String name = jsonArray.getJSONObject(i).getString("name");
                 String time = jsonArray.getJSONObject(i).getString("time");
                 String difficulty = jsonArray.getJSONObject(i).getString("difficulty");
                 String picture = jsonArray.getJSONObject(i).getString("picture");
-                HashMap<String,String> map = new HashMap<>();
-                map.put("name",name);
-                map.put("time",time);
-                map.put("difficulty",difficulty);
-                map.put("picture",picture);
+                HashMap<String, String> map = new HashMap<>();
+                map.put("name", name);
+                map.put("time", time);
+                map.put("difficulty", difficulty);
+                map.put("picture", picture);
                 arrayList.add(map);
             }
 
@@ -82,5 +90,11 @@ public class RecycleViewActivity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public void onClick(View view) {
+        if (view.getId() == binding.btnBackSearch.getId() || view.getId() == binding.btnHome.getId())
+            startActivity(new Intent(this, HomeActivity.class));
     }
 }

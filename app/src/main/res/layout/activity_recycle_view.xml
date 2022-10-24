@@ -21,7 +21,7 @@
             style="@style/main_title_recoleta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Search Recipe"
+            android:text="@string/search_recipe"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -30,7 +30,7 @@
             app:layout_constraintVertical_bias="0.5" />
 
         <Button
-            android:id="@+id/btn_back_liked"
+            android:id="@+id/btn_back_search"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="60dp"
             android:layout_height="60dp"
@@ -154,13 +154,14 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Recipe Title, Ingredient"
+        android:hint="@string/recipe_title_ingredient"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider18"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textView14"
@@ -169,7 +170,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
-        android:text="Last Seen"
+        android:text="@string/last_seen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
